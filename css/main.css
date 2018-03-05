@@ -61,7 +61,7 @@ html, body {
     scroll-behavior: smooth;
 }
 a {
-	color: #e84545;
+	color: #7CBD1E;
     text-decoration: none;
 }
 a:hover, a:focus {
@@ -149,13 +149,14 @@ ul li {
 .intro-content h1 {
 	font-size: 3.1em;
 	font-weight: 700;
-	letter-spacing: -3px;
+	letter-spacing: -2px;
     margin: 0px;
 }
 .intro-content p {
 	font-size: 12px;
 	letter-spacing: 1px;
 	line-height: 19px;
+    margin-top: 5px;
 }
 .intro-content h4 {
 	font-size: 0.9em;
@@ -208,7 +209,7 @@ ul li {
 	color: #000;
 }
 .footer .footer-share a:hover {
-    color: #e84545;
+    color: #7CBD1E;
 }
 /* ------------------------------------------------------------------------------
 	 Menu
@@ -238,7 +239,7 @@ ul li {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #e84545;
+  background-color: #7CBD1E;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -259,30 +260,30 @@ ul li {
 
 /*** Works on common browsers ***/
 ::selection {
-    background-color: #e84545;
+    background-color: #7CBD1E;
     color: #FFF;
 }
 
 /*** Mozilla based browsers ***/
 ::-moz-selection {
-    background-color: #e84545;
+    background-color: #7CBD1E;
     color: #FFF;
 }
 
 /***For Other Browsers ***/
 ::-o-selection {
-    background-color: #e84545;
+    background-color: #7CBD1E;
     color: #FFF;
 }
 
 ::-ms-selection {
-    background-color: #e84545;
+    background-color: #7CBD1E;
     color: #FFF;
 }
 
 /*** For Webkit ***/
 ::-webkit-selection {
-    background-color: #e84545;
+    background-color: #7CBD1E;
     color: #FFF;
 }
 
