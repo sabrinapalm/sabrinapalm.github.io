@@ -11,7 +11,11 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -33,7 +37,7 @@
   <!-- Navigation Section --> 
   
   <!-- Banner Section -->
-  <div class="container">
+  <div class="banner">
     <div class="banner-inner-wrapper">
       <div class="banner-text">
         <h1>I'm Sabrina. </h1>
@@ -47,12 +51,12 @@
 <!-- Header Section --> 
 
 <!-- Intro Section -->
-  <div id="container">
+  <div class="container">
         <div class="intro-content">
           <h1>About me</h1>
         </div>
         <div class="intro-content">
-         <h4>Hi!</h4>
+         <h4>Hi<span>!</span></h4>
           <p>I'm Sabrina, a 29 year old Front-End Developer student at EC Education, Gothenburg, Sweden. I'm a sucker for minimalistic design and I believe in simple but functional websites and applications. Since I'm very curious on how to achieve and solve different things in my code I spend most of my time using W3Schools, MDN, Stack Overflow and probably have a gazillion Google searches.</p>
           <p>When time is offered I study courses on Udemy wich is a great place that offers online courses for a reasonable price in various topics. The ones I'm focusing on right now is the Modern JavaScript courses. </p>
           <p>What about back in time? At about 15 years of age, I began to develop my creative side, bought my first camera to use for photography, edited my pictures using Adobe Photoshop. After a few years I also found interest in text communication, graphic communication and webdesign. </p>
@@ -60,37 +64,37 @@
           <p>I'm going to do my first internship, I'm looking for a fun company or web agency to get started in. Are you interested in having someone who is willing to learn, develop and also have an eye for design, do not hesitate to contact me!</p>
         </div>
     </div>
-    <div id="container">
+    <div class="container hideme">
         <div id="education" class="intro-content">
           <h1>Education</h1>
         </div>
         <div class="intro-content">
-        <h4>Front-End Developer | EC Education | 2017 - 2019</h4>
+            <h4>Front-End Developer <span>|</span> EC Education <span>|</span> 2017 - 2019</h4>
           <p>Studying webdevelopment of effective and responsive web pages with HTML and CSS. Most of the education focuses on structured software development in the language JavaScript.</p>
           
-        <h4>Certificate | Modern JavaScript: Getting started | Udemy | 2017</h4> 
+        <h4>Certificate <span>|</span> Modern JavaScript: Getting started <span>|</span> Udemy <span>|</span> 2017</h4> 
           <p>Learn the fundamentals of JavaScript <br>Licens UC-BXA4W8D4 ((<a class="color-font" href="./images/UC-BXA4W8D4.jpg" target="_blank">show certificate</a>))</p>
           
-        <h4>Modern JavaScript: Advanced Topics | Udemy | 2018 - Not started</h4>
+        <h4>Modern JavaScript: Advanced Topics <span>|</span> Udemy <span>|</span> 2018 - Not started</h4>
           <p>The main topics in this course is to learn advanced concepts for objects and functions, the value of 'this', the power of functions using closure and IIFEs, JSON and more. This is a continuation of Modern JavaScript: Getting started.</p>
          
-            <h4>React 16 - The Complete Guide (incl. React Router 4 &amp; Redux) | Udemy | 2018 - Not started</h4>
+            <h4>React 16 - The Complete Guide (incl. React Router 4 &amp; Redux) <span>|</span> Udemy <span>|</span> 2018 - Not started</h4>
           <p>Learn React or dive deeper into it. Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course: The Burger Builder!</p>
           
-            <h4>Web-Editor | GRvux Vocational Education | 2011 - 2012</h4>
+            <h4>Web-Editor <span>|</span> GRvux Vocational Education <span>|</span> 2011 - 2012</h4>
           <p>Studied webcommunication for digital media on websites and over the internet. Included courses: text/graphic communication, photography, media production and webdesign.</p>
           
           <h4>Development &amp; Design Tools</h4>
             <p>HTML5, CSS3, JavaScript, Bootstrap, Git, React Native, Firebase, Adobe Photoshop, Adobe Indesign</p>
         </div>
     </div>
-    <div id="container">
+    <div class="container hideme">
         <div id="portfolio" class="intro-content">
           <h1>Portfolio</h1>
         </div>
         <div class="intro-content">
         <h4>Bonsai Jobs mobile app (Test)</h4> 
-            <p>A react-native test for the company Bonsai.se The test was about building a replica of their job application for students using the React Native framework to build a list view and navigation/router between four different pages. To checkout the test in a real application-simulator you can follow the steps below. <a href="https://github.com/sabrinapalm/react-test" target="_blank">GitHub-repo.</a></p>
+            <p>A react-native test for the company <a href="https://bonsai.se/" target="_blank">Bonsai.se</a> The test was about building a replica of their job application for students using the React Native framework to build a list view and navigation/router between four different pages. To checkout the test in a real application-simulator you can follow the steps below. <a href="https://github.com/sabrinapalm/react-test" target="_blank">GitHub-repo.</a></p>
             
             <p><i class="fas fa-angle-right"></i> Visit <a href="https://expo.io/@sabrinapalm/bonsai-app" target="_blank">expo.io/@sabrinapalm</a></p>
             <p><i class="fas fa-angle-right"></i> Download Expo mobile application</p>
@@ -102,7 +106,7 @@
 
 <!-- Footer section -->
 <footer id="contact" class="footer">
-  <div class="container">
+  <div class="hideme">
       <h4>Contact</h4>
         <p>Email : <a href="mailto:sabrina_palm@hotmail.com"> sabrina_palm@hotmail.com </a></p>
     <div class="social-footer">

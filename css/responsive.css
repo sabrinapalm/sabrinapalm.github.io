@@ -1,0 +1,40 @@
+@media screen and (max-width: 1025px) {
+
+    .banner-inner-wrapper {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    
+    .container {
+        flex-direction: column;
+        margin: 0px auto;
+        width: 83%;
+    }
+    .banner {
+        min-width: 100%;
+        min-height: 6%;
+    }
+    
+    .primary-nav {
+        display: none;
+    }
+    .intro-content h1 {
+        font-size: 1.8em;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .container .intro-content {
+        padding: 0px;
+    }
+    .footer {
+        margin: 50px auto;
+        padding: 0px;
+    }
+}
+
