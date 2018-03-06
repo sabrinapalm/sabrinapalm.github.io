@@ -181,24 +181,27 @@ ul li {
 	 Footer
 -------------------------------------------------------------------------------*/
 .footer {
+    background-color: #2d3033;
 	margin: auto;
 	text-align: center;
+    margin-top: 100px;
 	padding-top: 2%;
 	padding-bottom: 2%;
+    border-top: 2px solid #7CBD1E;
 }
 .footer h4 {
-	font-size: 14px;
-	color: #000;
+	font-size: 1em;
+	color: #fff;
 	letter-spacing: 2px;
 	margin: 0 0 15px 0;
 	padding: 0px;
 }
 .footer p {
 	font-size: 12px;
-	color: #6c7279;
+	color: #fff;
 }
 .footer a {
-	color: #000;
+	color: #fff;
 }
 .footer a:hover {
     color: #7CBD1E;
@@ -214,7 +217,7 @@ ul li {
 .footer .footer-share a {
 	border: none;
 	font-size: 1em;;
-	color: #000;
+	color: #fff;
 }
 .footer .footer-share a:hover {
     color: #7CBD1E;
