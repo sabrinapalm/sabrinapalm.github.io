@@ -127,6 +127,10 @@ ul li {
 /* ==========================================================================
 	About me
 ========================================================================== */
+#aboutme h1, #portfolio h1, #education h1 {
+    width: 280px;
+    font-size: 2.8em;
+}
 .container {
     padding: 0px;
     display: flex;
@@ -135,15 +139,15 @@ ul li {
     flex-wrap: wrap;
     margin-top: 100px;
 }
-.intro-content:first-child {
-	margin-top: 0px;
-    padding: 10px;
-    flex: 0.5;
-}
 .intro-content:nth-child(2) {
 	margin-top: 0px;
     padding: 20px;
     flex: 2 2 200px;
+}
+.intro-content:nth-child(3) {
+	margin-top: 0px;
+    padding: 20px;
+    flex: 0 0 200px;
 }
 .hideme {
     opacity:0;
@@ -161,7 +165,7 @@ ul li {
 	font-size: 12px;
 	letter-spacing: 1px;
 	line-height: 19px;
-    margin-top: 5px;
+
 }
 .intro-content h4 {
 	font-size: 0.9em;
@@ -169,6 +173,9 @@ ul li {
 	font-weight: 700;
 	text-transform: uppercase;
     margin-bottom: 0px;
+}
+.intro-content:nth-child(3) h4 {
+    color: #7CBD1E;
 }
 .intro-content li {
 	line-height: 30px;
