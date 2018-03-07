@@ -250,6 +250,11 @@ ul li {
     letter-spacing: 2px;
     color: #393939;
     text-decoration: none;
+    outline : none;
+    opacity: 0.8;
+}
+.primary-nav a:hover {
+    opacity: 1;
 }
 /*
 .primary-nav li:before {
@@ -312,4 +317,5 @@ ul li {
     border: none;
     cursor: pointer;
     font-size: 1.1em;
+    outline : none;
 }

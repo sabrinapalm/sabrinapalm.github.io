@@ -23,22 +23,41 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 		});
 	}
-
-
-    $("#clickme").click(function(){
+    
+    $('#clickme').click(function() {
+      var clicks = $(this).data('clicks');
+      if (clicks) {
+          
+          $("#about-me").html("ABOUT ME");
+          $("#education-me").html("EDUCATION");
+          $("#portfolio-me").html("PORTFOLIO");
+          $("#contact-me").html("CONTACT");
+          $("#clickme").html("💛");
         
-        $("#about-me").html("😎");
-        $("#education-me").html("🏫");
-        $("#portfolio-me").html("📓");
-        $("#contact-me").html("📩");
-        $("#clickme").html("💚");
+          $("#about-me").css("fontSize", "0.7em");
+          $("#education-me").css("fontSize", "0.7em");
+          $("#portfolio-me").css("font-size", "0.7em");
+          $("#contact-me").css("font-size", "0.7em");
+          
+      } else {
+          
+          $("#about-me").html("😎");
+          $("#education-me").html("🏫");
+          $("#portfolio-me").html("📓");
+          $("#contact-me").html("📩");
+          $("#clickme").html("❤️");
+          
+          $("#about-me").css("fontSize", "1em");
+          $("#education-me").css("fontSize", "1em");
+          $("#portfolio-me").css("font-size", "1em");
+          $("#contact-me").css("font-size", "1em");
+          
+      }
         
-        $("#about-me").css("fontSize", "1em");
-        $("#education-me").css("fontSize", "1em");
-        $("#portfolio-me").css("font-size", "1em");
-        $("#contact-me").css("font-size", "1em");
+      $(this).data("clicks", !clicks);
+        
+    });
 
-});
 
 
 
