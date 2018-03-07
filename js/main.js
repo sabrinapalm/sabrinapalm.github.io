@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
           
           $("#about-me").html("😎");
-          $("#education-me").html("🏫");
-          $("#portfolio-me").html("📓");
+          $("#education-me").html("👩‍🎓");
+          $("#portfolio-me").html("💼");
           $("#contact-me").html("📩");
           $("#clickme").html("❤️");
           

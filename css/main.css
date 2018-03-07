@@ -127,6 +127,14 @@ ul li {
 /* ==========================================================================
 	About me
 ========================================================================== */
+#clickme {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    outline : none;
+}
+
 #aboutme h1, #portfolio h1, #education h1 {
     width: 280px;
     font-size: 2.8em;
@@ -312,10 +320,6 @@ ul li {
     color: #FFF;
 }
 
-#clickme {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.1em;
-    outline : none;
-}
+
+
+
