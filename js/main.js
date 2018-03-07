@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
           
           $("#clickme").html("❤️");
           
-          $('.banner').css('backgroundImage', "url(../images/banneremoji.jpg)");
+          $('.banner').css('backgroundImage', "url(../images/banneremoji.png)");
           
           $("#about-me, #education-me, #portfolio-me, #contact-me").css("fontSize", "1em");
           
