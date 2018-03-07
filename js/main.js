@@ -44,6 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
           $("#contact-me").html("CONTACT");
           
           $("#clickme").html("💛");
+          
+          $('.banner').css('backgroundImage', "url(../images/banner.jpg)");
         
           $("#about-me, #education-me, #portfolio-me, #contact-me").css("fontSize", "0.7em");
           
@@ -55,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
           $("#contact-me").html("📩");
           
           $("#clickme").html("❤️");
+          
+          $('.banner').css('backgroundImage', "url(../images/banneremoji.jpg)");
           
           $("#about-me, #education-me, #portfolio-me, #contact-me").css("fontSize", "1em");
           
