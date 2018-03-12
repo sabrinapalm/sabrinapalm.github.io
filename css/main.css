@@ -1,6 +1,7 @@
 /* ------------------------------------------------------------------------------
 	 Typography
 -------------------------------------------------------------------------------*/
+
 p {
 	font-size: 14px;
 	line-height: 22.4px;
@@ -31,7 +32,7 @@ h5 {
 	font-weight: 700;
 }
 .btn {
-    background-color: transparent;
+	background-color: transparent;
 	border: 1px solid rgba(0, 0, 0, 0.75);
 	margin-top: 5px;
 	color: #2a2a2a;
@@ -42,9 +43,10 @@ h5 {
 	padding: 2% 4%;
 	display: inline-block;
 	text-transform: uppercase;
-    text-decoration: none;
+	text-decoration: none;
 }
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
 	background-color: #2a2a2a;
 	color: #F1F1F1;
 }
@@ -54,30 +56,34 @@ h5 {
 /* ------------------------------------------------------------------------------
 	 General Style
 -------------------------------------------------------------------------------*/
-html, body {
-    margin: 0px;
-    padding: 0px;
-    height:1500px;
-    scroll-behavior: smooth;
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 1500px;
+	scroll-behavior: smooth;
 }
 a {
 	color: #7CBD1E;
-    text-decoration: none;
+	text-decoration: none;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
 	text-decoration: none;
 	-moz-transition: background-color, color, 0.3s;
 	-o-transition: background-color, color, 0.3s;
 	-webkit-transition: background-color, color, 0.3s;
 	transition: background-color, color, 0.3s;
-    color: #7cd21e;
+	color: #7cd21e;
 }
 body {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	color: #6c7279;
 }
-ul, ol {
+ul,
+ol {
 	margin: 0;
 	padding: 0;
 }
@@ -93,6 +99,7 @@ ul li {
 /* ==========================================================================
 	$Banner
 ========================================================================== */
+
 .banner {
 	background-image: url(../images/banner.jpg);
 	background-position: center top;
@@ -104,105 +111,105 @@ ul li {
 	min-height: 405px;
 }
 .banner-inner-wrapper {
-    position: absolute;
-    top: 130px;
-    right: 700px;
+	position: absolute;
+	top: 130px;
+	right: 700px;
 }
-
 .banner-text h1 {
 	color: #393939;
 	font-family: "Open Sans", sans-serif;
 	font-size: 23px;
 	font-weight: 400;
-    margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 .banner-text p {
 	color: #393939;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 1.5;
-    margin-top: 1%;
+	margin-top: 1%;
 	margin-bottom: 1%;
 }
 /* ==========================================================================
 	About me
 ========================================================================== */
-#clickme {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.1em;
-    outline : none;
-}
 
-#aboutme h1, #portfolio h1, #education h1 {
-    width: 280px;
-    font-size: 2.8em;
+#clickme {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 1.1em;
+	outline: none;
+}
+#aboutme h1,
+#portfolio h1,
+#education h1 {
+	width: 280px;
+	font-size: 2.8em;
 }
 .container {
-    padding: 0px;
-    display: flex;
-    width: 77%;
-    margin: 10px auto;
-    flex-wrap: wrap;
-    margin-top: 100px;
+	padding: 0px;
+	display: flex;
+	width: 77%;
+	margin: 10px auto;
+	flex-wrap: wrap;
+	margin-top: 100px;
 }
 .intro-content:nth-child(2) {
 	margin-top: 0px;
-    padding: 20px;
-    flex: 2 2 200px;
+	padding: 20px;
+	flex: 2 2 200px;
 }
 .intro-content:nth-child(3) {
 	margin-top: 0px;
-    padding: 20px;
-    flex: 0 0 200px;
+	padding: 20px;
+	flex: 0 0 200px;
 }
 .hideme {
-    opacity:0;
+	opacity: 0;
 }
-
-
 /*Header and text styling*/
+
 .intro-content h1 {
 	font-size: 3.1em;
 	font-weight: 700;
 	letter-spacing: -2px;
-    margin: 0px;
+	margin: 0px;
 }
 .intro-content p {
 	font-size: 12px;
 	letter-spacing: 1px;
 	line-height: 19px;
-
 }
 .intro-content h4 {
 	font-size: 0.9em;
 	letter-spacing: 1px;
 	font-weight: 700;
 	text-transform: uppercase;
-    margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 .intro-content:nth-child(3) h4 {
-    color: #7CBD1E;
+	color: #7CBD1E;
 }
 .intro-content li {
 	line-height: 30px;
 	letter-spacing: 1px;
 }
 .intro-content span {
-    color: #393939;
+	color: #393939;
 }
 /* ------------------------------------------------------------------------------
 	 Footer
 -------------------------------------------------------------------------------*/
+
 .footer {
-    background-color: #2d3033;
+	background-color: #2d3033;
 	margin: auto;
 	text-align: center;
-    margin-top: 100px;
+	margin-top: 100px;
 	padding-top: 2%;
 	padding-bottom: 2%;
-    border-top: 2px solid #7CBD1E;
+	border-top: 2px solid #7CBD1E;
 }
 .footer h4 {
 	font-size: 1em;
@@ -219,7 +226,7 @@ ul li {
 	color: #fff;
 }
 .footer a:hover {
-    color: #7CBD1E;
+	color: #7CBD1E;
 }
 .footer .footer-share {
 	margin: 0px auto;
@@ -227,42 +234,44 @@ ul li {
 .footer .footer-share li {
 	display: inline-block;
 	float: none;
-    margin: 10px;
+	margin: 10px;
 }
 .footer .footer-share a {
 	border: none;
-	font-size: 1em;;
+	font-size: 1em;
+	;
 	color: #fff;
 }
 .footer .footer-share a:hover {
-    color: #7CBD1E;
+	color: #7CBD1E;
 }
 /* ------------------------------------------------------------------------------
 	 Menu
 -------------------------------------------------------------------------------*/
+
 .navigation {
-    position: absolute;
-    padding: 10px;
-    right: 50px;
+	position: absolute;
+	padding: 10px;
+	right: 50px;
 }
 .primary-nav li {
-    text-align: center;
-    position: relative;
-    padding: 15px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0px 10px;
+	text-align: center;
+	position: relative;
+	padding: 15px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px 10px;
 }
 .primary-nav a {
-    font-size: 0.7em;
-    letter-spacing: 2px;
-    color: #393939;
-    text-decoration: none;
-    outline : none;
-    opacity: 0.8;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	color: #393939;
+	text-decoration: none;
+	outline: none;
+	opacity: 0.8;
 }
 .primary-nav a:hover {
-    opacity: 1;
+	opacity: 1;
 }
 /*
 .primary-nav li:before {
@@ -285,41 +294,36 @@ ul li {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }*/
+
 /* ------------------------------------------------------------------------------
 	 Menu End
 -------------------------------------------------------------------------------*/
 
-
-
 /*** Works on common browsers ***/
+
 ::selection {
-    background-color: #7CBD1E;
-    color: #FFF;
+	background-color: #7CBD1E;
+	color: #FFF;
 }
-
 /*** Mozilla based browsers ***/
+
 ::-moz-selection {
-    background-color: #7CBD1E;
-    color: #FFF;
+	background-color: #7CBD1E;
+	color: #FFF;
 }
-
 /***For Other Browsers ***/
+
 ::-o-selection {
-    background-color: #7CBD1E;
-    color: #FFF;
+	background-color: #7CBD1E;
+	color: #FFF;
 }
-
 ::-ms-selection {
-    background-color: #7CBD1E;
-    color: #FFF;
+	background-color: #7CBD1E;
+	color: #FFF;
 }
-
 /*** For Webkit ***/
+
 ::-webkit-selection {
-    background-color: #7CBD1E;
-    color: #FFF;
+	background-color: #7CBD1E;
+	color: #FFF;
 }
-
-
-
-

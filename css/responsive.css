@@ -1,47 +1,43 @@
 @media screen and (max-width: 1505px) {
-
-    .banner-inner-wrapper {
-        display: none;
-    }
+	.banner-inner-wrapper {
+		display: none;
+	}
 }
-
 
 @media screen and (max-width: 769px) {
-    
-    #aboutme h1, #portfolio h1, #education h1 {
-        font-size: 2em;
-        text-transform: uppercase;
-        margin-top: 40px;
-        margin-bottom: 0px
-    }
-    
-    .container {
-        flex-direction: column;
-        margin: 0px auto;
-        width: 83%;
-    }
-    .banner {
-        min-width: 100%;
-        min-height: 9%;
-    }
-    
-    .primary-nav {
-        display: none;
-    }
-    .intro-content h1 {
-        font-size: 1.8em;
-        letter-spacing: 1px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-top: 40px;
-        margin-bottom: 10px;
-    }
-    .container .intro-content {
-        padding: 0px;
-    }
-    .footer {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+	#aboutme h1,
+	#portfolio h1,
+	#education h1 {
+		font-size: 2em;
+		text-transform: uppercase;
+		margin-top: 40px;
+		margin-bottom: 0px
+	}
+	.container {
+		flex-direction: column;
+		margin: 0px auto;
+		width: 83%;
+	}
+	.banner {
+		min-width: 100%;
+		min-height: 9%;
+	}
+	.primary-nav {
+		display: none;
+	}
+	.intro-content h1 {
+		font-size: 1.8em;
+		letter-spacing: 1px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-top: 40px;
+		margin-bottom: 10px;
+	}
+	.container .intro-content {
+		padding: 0px;
+	}
+	.footer {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
 }
-
