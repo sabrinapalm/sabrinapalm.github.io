@@ -61,8 +61,12 @@ html,
 body {
 	margin: 0px;
 	padding: 0px;
-	height: 1500px;
+	/* height: 1500px; */
 	scroll-behavior: smooth;
+	background: #F09819;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #EDDE5D, #F09819);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #EDDE5D, #F09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 a {
 	color: #7CBD1E;
@@ -95,6 +99,21 @@ ul li {
 }
 .no-padding {
 	padding: 0;
+}
+h1, p {
+	color: #FFF;
+	text-align: center;
+	margin: 0;
+	font-weight: 500;
+	font-family: Oswald, sans-serif;
+}
+
+h2 {
+	color: #FFF;
+	text-align: center;
+	margin: 0;
+	font-weight: 500;
+	font-family: Oswald, sans-serif;
 }
 /* ==========================================================================
 	$Banner
@@ -329,4 +348,28 @@ ul li {
 ::-webkit-selection {
 	background-color: #7CBD1E;
 	color: #FFF;
+}
+
+
+/*Coming soon*/
+.simple {
+	margin: 350px auto;
+}
+
+.footer-new {
+	margin: 0px auto;
+	text-align: center;
+}
+.footer-new ul {
+	padding: 10px;
+}
+.footer-new li {
+	display: inline-block;
+	float: none;
+	margin: 10px;
+}
+.footer-new a {
+	border: none;
+	font-size: 1.4em;
+	color: #fff;
 }
