@@ -1143,7 +1143,7 @@ header .logo a {
 
 
 #intro {
-	background: var(--main-bg-color) url(../images/IMG_2201.jpg) no-repeat center bottom;
+	background: var(--main-bg-color) url(../images/bg-main.png) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
