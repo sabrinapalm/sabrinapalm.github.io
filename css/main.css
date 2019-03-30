@@ -4,11 +4,17 @@
 
 :root {
   --main-bg-color: #222831;
-  --main-accent-color: #00adb5;
+  --main-accent-color: #a6cb12;
 	--main-text-color: #393e46;
 }
 
-var(--main-bg-color)
+.intro-info .single {
+  color: var(--main-accent-color)
+}
+
+.intro-content .single {
+  color: var(--main-accent-color)
+}
 
 html {
 	font-size: 9.5px;
@@ -44,6 +50,7 @@ body {
 
 a, a:visited {
 	color: #000000;
+  font-weight: 500;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -1080,8 +1087,8 @@ header .logo a {
 
 
 .main-navigation {
-	background: rgba(0, 0, 0, 0.3);
-	padding: 24px 30px 42px;
+	background: transparent;
+	padding: 10px 10px 10px;
 	margin: 0;
 	width: 100%;
 	height: auto;
@@ -1136,7 +1143,7 @@ header .logo a {
 
 
 #intro {
-	background: var(--main-bg-color) url(../images/bg_main.png) no-repeat center bottom;
+	background: var(--main-bg-color) url(../images/IMG_2201.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
