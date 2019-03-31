@@ -28,7 +28,7 @@
 
 	function getRandomColorOnLoad() {
 	 	var root = document.documentElement;
-		var colors = ["#41aaa8", "#c54fa7", "#f69314", "#6b76ff"];
+		var colors = ["#41aaa8", "#c54fa7", "#f69314", "#6b76ff", "#a6cb12"];
 
 		function getColor() {
 		   return colors[
