@@ -12,6 +12,7 @@
 				minFontSize: '42px', maxFontSize: '84px'
 			});
 		}, 100);
+
 		$(".fluid-video-wrapper").fitVids();
 		$("#owl-slider").owlCarousel({
         navigation: false,
@@ -23,6 +24,20 @@
 	     ],
         navigationText: false
     });
+
+
+	function getRandomColorOnLoad() {
+	 	var root = document.documentElement;
+		var colors = ["#41aaa8", "#c54fa7", "#f69314", "#6b76ff"];
+
+		function getColor() {
+		   return colors[
+		     Math.floor(Math.random() * colors.length)
+		   ];
+		}
+		root.style.setProperty('--main-accent-color', getColor());
+	}
+	getRandomColorOnLoad();
 
 
 
