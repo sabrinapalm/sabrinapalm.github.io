@@ -1146,7 +1146,7 @@ header .logo a {
 
 
 #intro {
-	background: var(--main-bg-color) url(../images/bg-main.png) no-repeat center bottom;
+	/* background: var(--main-bg-color) url(../images/bg-main.png) no-repeat center bottom; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1157,6 +1157,15 @@ header .logo a {
 	display: table;
 	position: relative;
 	text-align: center;
+  overflow: hidden;
+}
+.video-size {
+    position: absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
 }
 .intro-overlay {
 	position: absolute;
