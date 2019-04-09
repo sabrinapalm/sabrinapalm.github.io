@@ -6,7 +6,6 @@
 		});
 	})
 
-
 	setTimeout(function() {
 		$('#intro h1').fitText(1, {
 				minFontSize: '42px', maxFontSize: '84px'
@@ -24,6 +23,22 @@
 	     ],
         navigationText: false
     });
+
+
+	// 	var flag = document.getElementsByClassName('language-toggle')[0];
+	// 	flag.addEventListener("click", function(){
+	// 		changeLanguage();
+	// 	});
+	//
+	// function changeLanguage() {
+	// 	var languageFlag = document.getElementById('language-flag');
+	// 	var current = languageFlag.getAttribute('src');
+	// 	if (current === 'images/logos/gb_flag.png') {
+	// 		languageFlag.src = 'images/logos/se_flag.png'
+	// 	} else {
+	// 		languageFlag.src = 'images/logos/gb_flag.png';
+	// 	}
+	// };
 
 
 	function getRandomColorOnLoad() {
