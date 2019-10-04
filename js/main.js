@@ -24,23 +24,6 @@
         navigationText: false
     });
 
-
-	// 	var flag = document.getElementsByClassName('language-toggle')[0];
-	// 	flag.addEventListener("click", function(){
-	// 		changeLanguage();
-	// 	});
-	//
-	// function changeLanguage() {
-	// 	var languageFlag = document.getElementById('language-flag');
-	// 	var current = languageFlag.getAttribute('src');
-	// 	if (current === 'images/logos/gb_flag.png') {
-	// 		languageFlag.src = 'images/logos/se_flag.png'
-	// 	} else {
-	// 		languageFlag.src = 'images/logos/gb_flag.png';
-	// 	}
-	// };
-
-
 	function getRandomColorOnLoad() {
 	 	var root = document.documentElement;
 		var colors = ["#41aaa8", "#D37A90", "#f69314", "#6b76ff", "#a6cb12", "#df0e62"];
@@ -182,40 +165,6 @@
 
 	$('input, textarea, select').placeholder()
 
-
-/*
-	$('#contactForm').validate({
-		submitHandler: function(form) {
-			var sLoader = $('#submit-loader');
-			$.ajax({
-		      type: "POST",
-		      url: "inc/sendEmail.php",
-		      data: $(form).serialize(),
-		      beforeSend: function() {
-						sLoader.fadeIn();
-					},
-					success: function(msg) {
-						 // Message was sent
-						 if (msg == 'OK') {
-							 sLoader.fadeOut();
-							 $('#message-warning').hide();
-							 $('#contactForm').fadeOut();
-							 $('#message-success').fadeIn();
-						 } else {
-							 sLoader.fadeOut();
-							 $('#message-warning').html(msg);
-							 $('#message-warning').fadeIn();
-						 }
-		      },
-		      error: function() {
-		      	sLoader.fadeOut();
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
-		      }
-	      });
-  		}
-	});
-	*/
 
 	var pxShow = 300; // height on which the button will show
 	var fadeInTime = 400; // how slow/fast you want the button to show
