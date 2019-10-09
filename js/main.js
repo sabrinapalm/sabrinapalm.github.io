@@ -4,7 +4,7 @@
 		$("#loader").fadeOut("slow", function() {
 			$("#preloader").delay(300).fadeOut("slow");
 		});
-	})
+	});
 
 	setTimeout(function() {
 		$('#intro h1').fitText(1, {
@@ -163,7 +163,7 @@
   	});
 
 
-	$('input, textarea, select').placeholder()
+	$('input, textarea, select').placeholder();
 
 
 	var pxShow = 300; // height on which the button will show
