@@ -6,6 +6,43 @@
 		});
 	});
 
+
+	setTimeout(function() {
+		function typeOutText() {
+			var nameContainer = document.querySelector(".name");
+			var i = 0;
+			var txt = 'Sabrina Palm';
+			var speed = 200;
+			
+			nameContainer.innerHTML = ''
+
+			function typeWriter() {
+				if (i < txt.length) {
+					nameContainer.innerHTML += txt.charAt(i);
+					i++;
+					setTimeout(typeWriter, speed);
+				}
+			}
+			typeWriter();
+		}
+		typeOutText();
+	  }, 1500);
+
+
+	function getRandomColorOnLoad() {
+	 	var root = document.documentElement;
+		var colors = ["#41aaa8", "#D37A90", "#f69314", "#42b883", "#ac8daf"];
+
+		function getColor() {
+		   return colors[
+		     Math.floor(Math.random() * colors.length)
+		   ];
+		}
+		root.style.setProperty('--main-accent-color', getColor());
+	}
+	getRandomColorOnLoad();
+	
+
 	setTimeout(function() {
 		$('#intro h1').fitText(1, {
 				minFontSize: '42px', maxFontSize: '84px'
@@ -22,21 +59,7 @@
 	        [960, 3]
 	     ],
         navigationText: false
-    });
-
-	function getRandomColorOnLoad() {
-	 	var root = document.documentElement;
-		var colors = ["#41aaa8", "#D37A90", "#f69314", "#6b76ff", "#a6cb12", "#df0e62"];
-
-		function getColor() {
-		   return colors[
-		     Math.floor(Math.random() * colors.length)
-		   ];
-		}
-		root.style.setProperty('--main-accent-color', getColor());
-	}
-	getRandomColorOnLoad();
-
+	});
 
 
 	$('.alert-box').on('click', '.close', function() {
