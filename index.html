@@ -1,357 +1,86 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-   <meta charset="utf-8">
+	<meta charset="utf-8">
 	<title>Sabrina Palm | Frontend Developer </title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="icon" type="image/png" href="images/favicon.png">
+	<style>
+		body {
+			background: #141414;
+		}
+
+		.page {
+			height: 85vh;
+			position: relative;
+		}
+
+		.page a {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.link {
+			color: #FFF;
+			font-size: 16px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family: 'Lato';
+			letter-spacing: 2px;
+			font-size: 20px;
+		}
+
+		.link {
+			position: relative;
+			z-index: 1;
+			display: inline-flex;
+
+			padding-left: 10px;
+			padding-bottom: 5px;
+			padding-right: 10px;
+		}
+
+		.link::before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to top, #08fdd8 25%, rgba(0, 0, 0, 0) 40%);
+
+			position: absolute;
+			left: 0;
+			bottom: 2px;
+			z-index: -1;
+
+			will-change: width;
+			transform: rotate(-2deg);
+			transform-origin: left bottom
+		}
+
+		.link:hover::before {
+			width: 0;
+		}
+
+		.link::before {
+			transition: width .1s ease-out;
+		}
+
+		.link:hover::before {
+			transition-duration: .15s;
+		}
+	</style>
 </head>
-<body id="top">
-   <header>
-   	<div class="row">
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#">
-          <span>Menu</span>
-        </a>
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
-					</ul>
-				</nav>
-   		</div>
-   	</div>
-   </header>
 
-   <section id="intro">
-     <!-- <video autoplay loop muted class="video-size">
-       <source src="images/video/video-second-bg.mp4" type="video/mp4" poster="images/bg-main.png">
-     </video> -->
-   	<div class="intro-overlay"></div>
-   	<div class="intro-content">
-   		<div class="row">
-   			<div class="col-twelve">
-	   			<h5>Hi! My name is</h5>
-	   			<h1><span class="name">&nbsp;</span></h1>
-	   			<p class="intro-position">
-	   				<span>Frontend Developer</span>
-	   			</p>
-
-	   			<a class="button stroke smoothscroll" href="#about" title="">About Me</a>
-	   		</div>
-   		</div>
-   	</div>
-
-   	<ul class="intro-social">
-      <li><a href="https://github.com/sabrinapalm" target="_blank"><i class="fa fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/sabrinapalm/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-      <li><a href="https://www.instagram.com/gbgsabbe/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-      </ul>
-   </section> 
-
-
-   <section id="about">
-   	<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>About Me</h5>
-   			<h1>Who am I?</h1>
-
-   			<div class="intro-info">
-   				<img src="images/profile-image-secondary.PNG" alt="Profile Picture">
-   				<p class="lead">Greetings traveler! 👋🏼 I'm <span class="single">Sabrina</span>, a <span class="single">Frontend Developer</span> from <span span class="single">Gothenburg</span>,
-            Sweden. Motivated by the <span span class="single">creation</span> that allows people to <span span class="single">interact</span> with <span span class="single">technology.</span>
-            I'm a sucker for <span span class="single">clean code</span>, and I always try to become a <span span class="single">better coder</span> by sharing my code with teammates or googling for
-            <span span class="single">better solutions</span>. My heart beats a little extra for <span span class="single">minimalistic design</span> and
-            <span span class="single">functional webapplications</span>.</p>
-   			</div>
-   		</div>
-	   </div> 
-	   
-   	<div class="row about-content">
-   		<div class="col-six tab-full">
-
-   			<h3>Profile</h3>
-   			<p>Result and development drives me, therefore I focus alot on my work to achieve set goals.</p>
-
-   			<ul class="info-list">
-   				<li>
-   					<strong>Fullname:</strong>
-   					<span>Sabrina Palm</span>
-   				</li>
-   				<li>
-   					<strong>Living in:</strong>
-   					<span>Gothenburg, Sweden</span>
-   				</li>
-   				<li>
-   					<strong>Occupation:</strong>
-   					<span>Frontend Developer</span>
-   				</li>
-   				<li>
-   					<strong>Website:</strong>
-   					<span><a href="https://sabrinapalm.github.io/" alt="My Website" target="_blank">sabrinapalm.github.io</a></span>
-   				</li>
-   				<li>
-   					<strong>Email:</strong>
-   					<span>sabrina_palm@hotmail.com</span>
-   				</li>
-   			</ul> 
-   		</div>
-
-
-   		<div class="col-six tab-full">
-   			<h3>Skills</h3>
-   			<p>I will never reach 100% in these skills and I ❤️ it! <strong>#alwaysdevelop</strong></p>
-
-				<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>JavaScript</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>React.js</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent65"><span>65%</span></div>
-				   	<strong>React Native</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>85%</span></div>
-				   	<strong>HTML5</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent80"><span>80%</span></div>
-				   	<strong>CSS3</strong>
-				   </li>
-				</ul> 
-   		</div>
-   	</div>
-
-   	<div class="row button-section">
-   		<div class="col-twelve">
-   			<a href="mailto:sabrina_palm@hotmail.com?Subject=Hello%20Sabrina!" title="Contact me" class="button stroke">Contact me</a>
-        <a href="./documents/sabrinapalm_cv_simple.pdf" title="Download CV" target="_blank"  class="button button-primary">Download CV</a>
-   		</div>
-   	</div>
-   </section>
-
-
-	<section id="resume" class="grey-section">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Resume</h5>
-   			<h1>My Experience.</h1>
-
-   			<p class="lead">This is my experience working with frontend development. If you are interested in what I did earlier in life download my <a href="./documents/cv_sabrinapalm.pdf" title="Download CV" target="_blank">CV</a></p>
-   		</div>
-   	</div> 
-
-   	<div class="row resume-timeline">
-   		<div class="col-twelve resume-header">
-   			<h2>Work Experience</h2>
-   		</div>
-   		<div class="col-twelve">
-   			<div class="timeline-wrap">
-   				<div class="timeline-block">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Frontend Developer</h3>
-	   					<p>February 2019 - Present</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-						   <h4>Forza Football</h4>
-	   						<p>Based on the target group and users of the <a href="https://itunes.apple.com/se/app/forza-football/id500138120?mt=8" alt="Forza Football" target="_blank">Forza Football</a> app develop dynamic
-							webads/webviews and create API integrations for our partners using HTML, CSS
-							and JavaScript (DOM-manipulation). Work also includes maintaining the Forza
-							Challenge web-application, this project is built in React with ES6 Javascript. The
-							main goal of our squad is to increase conversion rate and make the company
-							revenue grow. </p>
-	   				</div>
-	   			</div>
-	   			<div class="timeline-block">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<h3>Frontend Developer</h3>
-	   					<p>Mars 2018 - February 2019</p>
-	   				</div>
-	   				<div class="timeline-content">
-	   					<h4>Bonsai Sverige</h4>
-	   					<p>Based on the target group and users of the product, develop a web interface and associated mobile application with React/React Native including state container Redux and the design library Material-UI. The focus is developing new features and improving user experience for administrators as well as the end users of <a href="https://itunes.apple.com/se/app/bonsai-campus/id1226346650?mt=8" alt="Bonsai Campus" target="_blank">Bonsai Campus</a>. The work is done in agile project methodology (Scrum) with focus on business benefits.</p>
-	   				</div>
-	   			</div> 
-	   			<div class="timeline-block">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<h3>Visual Design</h3>
-	   					<p>Mars 2018 - April 2018</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Bonsai Sverige</h4>
-	   					<p>Project Employment - Based on target groups and product users, design user flows, wireframes and prototypes in Adobe XD to enhance the experience of Bonsai Campus web & mobile application.</p>
-	   				</div>
-	   			</div> 
-   			</div> 
-   		</div> 
-   	</div> 
-
-   	<div class="row resume-timeline">
-   		<div class="col-twelve resume-header">
-   			<h2>Education</h2>
-
-   		</div> 
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-   				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>High School Diploma</h3>
-	   					<p>August 2017 - May 2019</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Frontend Development, EC Education</h4>
-	   					<p>Development of effective and responsive web applications. Most of the education focuses on structured program development in the language JavaScript. The education also includes courses such as HTML & CSS, User Experience, Graphics Programs, NodeJS, React.js, Vue.js, mongoDB, Server Side rendering, TDD - Jest / Enzyme as well as Agile project methodology (Scrum)</p>
-	   				</div>
-
-	   			</div> 
-
-	   			<div class="timeline-block">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<h3>Associate Degree</h3>
-	   					<p>January 2011 - December 2011</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Web Communication, GRvux</h4>
-	   					<p>Studied Web Communication for social media and various platforms on the internet. The focus was understanding target groups, how to communicate and make oriented content using text, graphic design and photography. The education also included web design, mediaproduction & multimedia.</p>
-	   				</div>
-
-	   			</div>
-
-   			</div>
-
-   		</div> 
-
-   	</div> 
-
-	</section> 
-
-
-	<section id="contact">
-		<div class="row section-intro">
-   		<div class="col-twelve">
-   			<h5>Contact</h5>
-        <a href="mailto:sabrina_palm@hotmail.com?Subject=Hello%20Sabrina!" target="_top" style="color: white;">Send me an email!</a>
-   		</div>
-   	</div>
-
-<!-- 
-   	<div class="row contact-form">
-   		<div class="col-twelve">
-            <form name="contactForm" id="contactForm" method="post" action="">
-      			<fieldset>
-                  <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                  </div>
-                  <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	               </div>
-                  <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-	               </div>
-                  <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div>
-                 <div class="form-field">
-                     <button class="submitform">Submit</button>
-                     <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
-								</div>
-							</div>
-                  </div>
-      			</fieldset>
-      		</form>
-
-            <div id="message-warning">
-            </div>
-        		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-        		</div> -->
-
-         </div>
-   	</div>
-	</section>
-
-   <footer>
-     	<div class="row">
-
-     		<div class="col-six tab-full pull-right social">
-
-     			<ul class="footer-social">
-            <li><a href="https://github.com/sabrinapalm" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/sabrinapalm/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/gbgsabbe/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-			   </ul>
-
-	      </div>
-
-      	<div class="col-six tab-full">
-	      	<div class="copyright">
-		        	<span>Sabrina Palm 2019</span>
-		         </div>
-	      	</div>
-
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
-
-      	</div> 
-   </footer>
-
-   <div id="preloader">
-    	<div id="loader"></div>
-   </div>
-
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
-
+<body>
+	<div class="page">
+		<a href="https://sabrinapalm.com" class="link">sabrinapalm.com</a>
+	</div>
 </body>
 
 </html>
