@@ -1,18 +1,18 @@
-jQuery(document).ready(function($) {
+document.addEventListener('DOMContentLoaded', function (event) {
+  var mastheadheight = document.querySelector('.ds-header').offsetHeight;
 
+  document
+    .querySelectorAll('.ds-banner,.ds-main-section')
+    .forEach(function (element) {
+      element.style.marginTop = mastheadheight + 'px';
+    });
 
-	var mastheadheight = $('.ds-header').outerHeight();
-	//console.log(mastheadheight);
-	$(".ds-banner,.ds-main-section").css("margin-top" , mastheadheight);
-
-	$(window).scroll(function(){
-	    if ($(window).scrollTop() >= 10) {
-	        $('.ds-header').addClass('ds-fixed-header');
-	    }
-	    else {
-	        $('.ds-header').removeClass('ds-fixed-header');
-	    }
-	}).scroll();
-
-
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset >= 10) {
+      document.querySelector('.ds-header').classList.add('ds-fixed-header');
+    } else {
+      document.querySelector('.ds-header').classList.remove('ds-fixed-header');
+    }
+  });
+  window.dispatchEvent(new Event('scroll'));
 });
