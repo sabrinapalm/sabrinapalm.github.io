@@ -1,13 +1,16 @@
 :root {
   --accent: #FF6500;
   --accent-light: #FFC100;
+  --black: #111;
+  --white: #fff;
+  --text-color: #111;
+}
+
+[data-theme="dark"] {
   --black: #fff;
   --white: #111;
   --text-color: #fff;
 }
-
-/* #fbb3b3 
-#d49eff */
 
 html {
   font-family: 'Inter', sans-serif;
@@ -120,10 +123,10 @@ img {
   z-index: 5;
   background-color: var(--white);
   padding: 70px 0;
-  transition-delay: 0s;
+  /* transition-delay: 0s;
   transition-duration: 0.4s;
   transition-property: all;
-  transition-timing-function: ease;
+  transition-timing-function: ease; */
 }
 
 .ds-header.ds-fixed-header {
@@ -509,7 +512,7 @@ span.ds-department {
 }
 
 .ds-footer {
-  background-color: var(--black);
+  background-color: var(--white);
   padding: 120px 0;
 }
 
@@ -528,20 +531,20 @@ span.ds-department {
 }
 
 .ds-footer section h4 {
-  color: var(--white);
+  color: var(--black);
   font-size: 48px;
   font-weight: 700;
 }
 
 .ds-footer section p {
   letter-spacing: 1.13px;
-  color: var(--white);
+  color: var(--black);
   font-size: 18px;
   margin-bottom: 40px;
 }
 
 .ds-copyright {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--black);
   letter-spacing: 1px;
   font-size: 16px;
 }

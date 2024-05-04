@@ -18,14 +18,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 
-document.getElementById("toggle-colors").addEventListener("click", function() {
-  const root = document.documentElement;
-  const currentBlack = getComputedStyle(root).getPropertyValue('--black').trim();
-  const currentWhite = getComputedStyle(root).getPropertyValue('--white').trim();
-  const currentTextColor = getComputedStyle(root).getPropertyValue('--text-color').trim();
+const currentTheme = localStorage.getItem("theme") || "light";
+document.documentElement.setAttribute("data-theme", currentTheme);
 
-  // Toggle colors
-  root.style.setProperty('--black', currentWhite);
-  root.style.setProperty('--white', currentBlack);
-  root.style.setProperty('--text-color', currentTextColor === "#fff" ? "#111" : "#fff");
+document.getElementById("toggle-colors").addEventListener("click", function() {
+    const newTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
 });
