@@ -16,3 +16,16 @@ document.addEventListener('DOMContentLoaded', function (event) {
   });
   window.dispatchEvent(new Event('scroll'));
 });
+
+
+document.getElementById("toggle-colors").addEventListener("click", function() {
+  const root = document.documentElement;
+  const currentBlack = getComputedStyle(root).getPropertyValue('--black').trim();
+  const currentWhite = getComputedStyle(root).getPropertyValue('--white').trim();
+  const currentTextColor = getComputedStyle(root).getPropertyValue('--text-color').trim();
+
+  // Toggle colors
+  root.style.setProperty('--black', currentWhite);
+  root.style.setProperty('--white', currentBlack);
+  root.style.setProperty('--text-color', currentTextColor === "#fff" ? "#111" : "#fff");
+});
