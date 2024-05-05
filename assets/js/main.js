@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
   window.dispatchEvent(new Event('scroll'));
 });
 
-
 const currentTheme = localStorage.getItem("theme") || "light";
 document.documentElement.setAttribute("data-theme", currentTheme);
 

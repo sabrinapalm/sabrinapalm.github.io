@@ -71,6 +71,8 @@ img {
   outline: none;
   height: auto;
   border-radius: 20px;
+  /* border-radius: 50%;
+  border: 5px solid var(--black); */
 }
 
 input,
@@ -698,18 +700,10 @@ span.ds-department {
 }
 
 .gradient-text {
-  /* Fallback: Set a background color. */
-  background-color: red;
-
-  /* Create the gradient. */
+  background-color: var(--accent);
   background-image: linear-gradient(45deg, var(--accent), var(--accent-light));
-
-  /* Set the background size and repeat properties. */
   background-size: 100%;
   background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
