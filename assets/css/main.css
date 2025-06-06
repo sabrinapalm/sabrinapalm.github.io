@@ -1,8 +1,8 @@
 :root {
-  --accent: #D63484;
-  --accent-light: #E9A86B;
+  --accent: #CA82F8;
+  --accent-light: #CA82F8;
   --black: #2c1e28;
-  --white: #F8F4EC;
+  --white: #f0f0f0;
   --text-color: #2c1e28;
 }
 
@@ -13,12 +13,12 @@
 }
 
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Karla', sans-serif;
   background-color: var(--white);
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Karla', sans-serif;
   overflow-x: hidden;
   background-color: var(--white);
   font-weight: 400;
@@ -87,7 +87,7 @@ ul {
 }
 
 @font-face {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 input:-webkit-autofill,
@@ -105,7 +105,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 figure {
@@ -187,15 +187,18 @@ img {
 
 .ds-social li a {
   border-radius: 100%;
-  color: var(--white);
+  /* color: var(--white); */
   width: 32px;
   height: 32px;
-  background-color: var(--black);
+  /* background-color: var(--black); */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 16px;
+  background: transparent;
+  color: #4d4d4d;
+  border: 1px solid #d9d9d9;
 }
 
 .ds-social li a:hover {
@@ -205,16 +208,19 @@ img {
 
 .ds-social li button {
   border-radius: 100%;
-  color: var(--white);
+  /* color: var(--white); */
   width: 32px;
   height: 32px;
-  background-color: var(--black);
+  /* background-color: var(--black); */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 16px;
-  border: none;
+  /* border: none; */
+  background: transparent;
+  color: #4d4d4d;
+  border: 1px solid #d9d9d9;
 }
 
 .ds-social li button:hover {
@@ -238,7 +244,7 @@ img {
 }
 
 .ds-banner section h1 {
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 48px;
   line-height: 60px;
   color: var(--black);
@@ -296,7 +302,7 @@ img {
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .ds-button {
@@ -310,6 +316,9 @@ img {
   padding: 17px 30px;
   border: 2px solid var(--accent);
   border-radius: 60px;
+  background: transparent;
+  color: #4d4d4d;
+  border: 1px solid #d9d9d9;
 }
 
 .ds-button:hover {
@@ -354,7 +363,7 @@ img {
 }
 
 .ds-experience-list section {
-  padding-right: 70px;
+  /* padding-right: 70px; */
 }
 
 .ds-experience-list {
@@ -700,6 +709,7 @@ span.ds-department {
 }
 
 .gradient-text {
+  font-family: 'Playfair Display';
   background-color: var(--accent);
   background-image: linear-gradient(45deg, var(--accent), var(--accent-light));
   background-size: 100%;
